@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Filmes - Netflix</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Catálogo de Filmes - Netflix</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Novos Lançamentos na Netflix</h2>
+        
+        <!-- Campo de busca -->
+        <input type="text" id="search" placeholder="Buscar filme..." onkeyup="filterMovies()">
+        
+        <div class="movie-list" id="movie-list">
+            <!-- Filme 1 -->
+            <div class="movie-card" data-name="O Poderoso Chefinho 2">
+                <img src="images/poderoso-chefinho2.jpg" alt="O Poderoso Chefinho 2">
+                <h3>O Poderoso Chefinho 2</h3>
+                <p>O Chefinho e seu irmão Tim enfrentam desafios enquanto tentam salvar a empresa BabyCorp da falência.</p>
+            </div>
+            <!-- Filme 2 -->
+            <div class="movie-card" data-name="Red Notice">
+                <img src="images/red-notice.jpg" alt="Red Notice">
+                <h3>Red Notice</h3>
+                <p>Um detetive do FBI se une a um ladrão de arte e a uma notória criminosa em uma busca para capturar uma famosa peça de arte.</p>
+            </div>
+            <!-- Filme 3 -->
+            <div class="movie-card" data-name="Enola Holmes 2">
+                <img src="images/enola-holmes2.jpg" alt="Enola Holmes 2">
+                <h3>Enola Holmes 2</h3>
+                <p>Enola, a irmã de Sherlock Holmes, parte em uma nova missão para resolver um mistério enquanto enfrenta novos desafios.</p>
+            </div>
+            <!-- Filme 4 -->
+            <div class="movie-card" data-name="A Barraca do Beijo 3">
+                <img src="images/barraca-do-beijo3.jpg" alt="A Barraca do Beijo 3">
+                <h3>A Barraca do Beijo 3</h3>
+                <p>O último verão antes da faculdade coloca o relacionamento de Elle à prova enquanto ela tem que fazer escolhas difíceis.</p>
+            </div>
+            <!-- Filme 5 -->
+            <div class="movie-card" data-name="O Irlandês">
+                <img src="images/o-irlandes.jpg" alt="O Irlandês">
+                <h3>O Irlandês</h3>
+                <p>Um veterano da máfia olha para trás em sua vida, refletindo sobre suas escolhas e a amizade com o famoso chefe da máfia, Jimmy Hoffa.</p>
+            </div>
+            <!-- Filme 6 -->
+            <div class="movie-card" data-name="Mank">
+                <img src="images/mank.jpg" alt="Mank">
+                <h3>Mank</h3>
+                <p>Este filme de David Fincher retrata os bastidores da criação do filme clássico "Cidadão Kane" e os desafios enfrentados pelo roteirista Herman Mankiewicz.</p>
+            </div>
+            <!-- Filme 7 -->
+            <div class="movie-card" data-name="O Último Mercenário">
+                <img src="images/ultimo-mercenario.jpg" alt="O Último Mercenário">
+                <h3>O Último Mercenário</h3>
+                <p>Um ex-agente secreto, conhecido como "o último mercenário", precisa voltar à ação para salvar seu filho de um perigoso esquema criminoso.</p>
+            </div>
+            <!-- Filme 8 -->
+            <div class="movie-card" data-name="Trem Bala">
+                <img src="images/trem-bala.jpg" alt="Trem Bala">
+                <h3>Trem Bala</h3>
+                <p>Um grupo de assassinos profissionais com diferentes objetivos se encontra em um trem bala em direção a Tóquio, resultando em uma batalha sangrenta.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Sobre o Catálogo</h2>
+        <p>Este catálogo contém alguns dos filmes mais populares e recentes da Netflix, com uma breve descrição de cada um.</p>
+    </section>
+
+    <!-- Caixa de redirecionamento para o link da Netflix -->
+    <section id="redirect">
+        <div class="redirect-box">
+            <p>Gostou de algum dos filmes acima? Acesse o link abaixo para assistir diretamente na Netflix:</p>
+            <a href="https://www.netflix.com/br/" target="_blank" class="redirect-link">Acessar Netflix</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Catálogo de Filmes - Netflix. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
